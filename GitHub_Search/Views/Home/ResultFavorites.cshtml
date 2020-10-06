@@ -1,0 +1,33 @@
+﻿@model IEnumerable<GitHub_Search.Models.GitHubItem>
+
+@{
+    ViewBag.Title = "ResultFavorites";
+}
+
+
+@if (Model != null)
+{
+    <div class="main">
+        <div class="container">
+
+            <div class="git-favorites-wrapper">
+                <h4>My GitHub favorites</h4>
+                <div class="git-favorites-block">
+                    @foreach (var item in Model)
+                    {
+                        <ul>
+                            <li class="list-item" id="@item.id">
+                                <div class="left-side">
+
+                                    <img src="@item.avatar_url" class="avatar" />
+                                    <span class="item-name">@item.name</span>
+                                </div>
+                            </li>
+                        </ul>
+                    }
+                </div>
+            </div>
+
+        </div>
+    </div>
+}

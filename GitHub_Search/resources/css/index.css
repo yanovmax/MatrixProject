@@ -1,0 +1,73 @@
+﻿body {
+}
+
+.git-search-block {
+    margin-top: 15px;
+}
+
+    .git-search-block input {
+        height: 30px;
+        width: 270px;
+        margin-right: 5px;
+    }
+
+    .git-search-block .btn {
+        border: 1px solid #767676;
+        padding: 4px 12px;
+        border-radius: 3px;
+        margin-top: -2px;
+    }
+
+.git-result-wrapper, .git-favorites-wrapper {
+    margin-top: 15px;
+}
+
+.git-result-block ul, .git-favorites-block ul {
+    list-style: none;
+}
+
+.list-item {
+    padding: 7px 0px 7px 7px;
+    width: 350px;
+    border: 1px solid #dcdcdc;
+    border-radius: 3px;
+    margin: 3px 0;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 8px;
+}
+
+    .list-item .left-side {
+        width: 100%;
+    }
+
+        .list-item .left-side .avatar {
+            width: 35px;
+        }
+
+        .list-item .left-side .item-name {
+            padding-left: 4px;
+        }
+
+
+    .list-item .item-favorite:hover {
+        cursor: pointer;
+    }
+
+    .list-item .img-favorite, .img-favorite-full {
+        width: 20px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: 18px;
+        vertical-align: text-bottom;
+        display: inline-block;
+        margin: 6px 15px 6px 0;
+    }
+
+    .list-item .img-favorite {
+        background-image: url(/resources/img/icon-favorite.png);
+    }
+
+    .list-item .img-favorite-full {
+        background-image: url(/resources/img/icon-favorite-full.png);
+    }
